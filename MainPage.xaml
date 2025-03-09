@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="WhiteNoise.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WhiteNoise"
+    xmlns:xaml="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <xaml:CanvasControl x:Name="DrawingCanvas" ClearColor="Black" Margin="0" 
+                            Draw="CanvasControl_Draw" Loaded="DrawingCanvas_Loaded" />
+
+        <StackPanel Orientation="Horizontal" Background="White" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+            <TextBlock Foreground="Black" Text="FPS: "/>
+            <TextBlock x:Name="FPS" />
+        </StackPanel>
+    </Grid>
+</Page>
