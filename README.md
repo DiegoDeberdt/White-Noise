@@ -3,7 +3,7 @@
 ## **Overview**
 The **"White Noise"** UWP application is a graphical program that generates and displays white noise as an image.
 
-![White Noise Animation](animation.gif)
+![White Noise Animation](white-noise.gif)
 
 ## **Functionality**
 ### **1. Canvas-based Rendering**
